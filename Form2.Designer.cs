@@ -31,8 +31,8 @@ namespace AkinatOrt
         {
             this.btnSi = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
-            this.lblPreguntas = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,20 +66,6 @@ namespace AkinatOrt
             this.btnNo.UseVisualStyleBackColor = false;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
-            // lblPreguntas
-            // 
-            this.lblPreguntas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblPreguntas.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreguntas.Cursor = System.Windows.Forms.Cursors.Help;
-            this.lblPreguntas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblPreguntas.Location = new System.Drawing.Point(67, 504);
-            this.lblPreguntas.Name = "lblPreguntas";
-            this.lblPreguntas.Size = new System.Drawing.Size(586, 66);
-            this.lblPreguntas.TabIndex = 2;
-            this.lblPreguntas.Text = "Su personaje es mujer?";
-            this.lblPreguntas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -88,6 +74,19 @@ namespace AkinatOrt
             this.dataGridView1.Size = new System.Drawing.Size(631, 345);
             this.dataGridView1.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(88, 489);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 100);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Inicio";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,8 +94,8 @@ namespace AkinatOrt
             this.BackgroundImage = global::AkinatOrt.Properties.Resources.Pantalla_Juego_Back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 719);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblPreguntas);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnSi);
             this.Name = "juego";
@@ -111,7 +110,7 @@ namespace AkinatOrt
 
         private System.Windows.Forms.Button btnSi;
         private System.Windows.Forms.Button btnNo;
-        private System.Windows.Forms.Label lblPreguntas;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

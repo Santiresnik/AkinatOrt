@@ -13,391 +13,155 @@ namespace AkinatOrt
 {
     public partial class juego : Form
     {
+        //Contador de pregunta
+        private int num = 0;
+        private bool[] response = new bool[22];
+        // Profesores
+        Profesores dario, ruben, pau, caro, lu, chona, mati, joaco, ranzo, aro, ivo, jero, julieta, ariel, natali, micaela, vena, roberto;
+
+        //Array de preguntas(22)
+        string[] pregs  = { 
+            "¿Su personaje es mujer?",
+            "¿Es profeso/a de tic?",
+            "¿Trabaja en ort hace mas de 3 años?",
+            "¿Es buena honda?",
+            "¿Trabaja en el area de la programación?",
+            "¿Trabaja en el area de diseño?",
+            "¿Es tambien el director de la especialidad tic?",
+            "¿Es alto/a?",
+            "¿Es rubio/a?",
+            "¿Usa anteojos?",
+            "¿Su personaje tiene mas de 30 años?",
+            "¿Tiene barba?",
+            "¿Su personaje suele usar bufanda?",
+            "¿Su personaje tiene ojos claros?",
+            "¿Su personaje es actualmente MEP?",
+            "¿Su personaje antes era MEP?",
+            "¿Su personaje llega tarde?",
+            "¿Tu personaje te podria amenazar con sacarte de tic?",
+            "¿Tiene hijos?",
+            "¿Te deja tareas?",
+            "¿Tu personaje te pondria un formulario evaluatorio?",
+            "¿Tiene rulos?"
+        };
         public juego()
         {
             InitializeComponent();
         }
-        //Variables
-        int NroPreg = 1;
-        string sql;
-
-        string profefinal;
-
-        int puntos_finales = 0, id = 0;
-        
-
-        DataSet ds = new DataSet();
-        //Variables
 
         private void juego_Load(object sender, EventArgs e)
         {
-            OleDbConnection conexion = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = |DataDirectory|\\Acess proyecto.accdb");
-            conexion.Open();
+            //Cargar los profesores
 
-            sql = "SELECT id,nombre,puntos FROM profes";
-            OleDbCommand cmd = new OleDbCommand(sql, conexion);
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            da.Fill(ds, "profes");
-            conexion.Close();
+            dario = new Profesores(new bool [22] { false, true,true, true, true, false, false, true, false, false, true, true, false, false, false, false, true, true, true, true, false, false });
+            ruben = new Profesores(new bool[22] { false, true,true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, true, false, true, false, false});
+            pau = new Profesores(new bool[22] {true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false});
+            caro = new Profesores(new bool[22] {true, true, false, true, false, false,false, false, true,false,false,false,true,true,true,true,true,false,false,true,true,false });
+            lu = new Profesores(new bool[22] {true, true, false, true, true, false, false, false,true, false, false, false, false, false, true,true, false, false, false, false, false, false });
+            chona = new Profesores(new bool[21] { false, false, false, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false });
+            mati = new Profesores(new bool[22] {false,false,false,true,true,true,false,false,false,false,false,false, true,false,true,false,false,false,false,false,false,false});
+            joaco = new Profesores(new bool[22] {false,false,true,true,true,false,false,true,false,true,true,false,false,false,true,false,false,false,false,false,false,true});
+            ranzo = new Profesores(new bool[22] {false,true,true,true,true,false,false,false,false,false,true,true,false,false,false,false,false,false,true,true,true,false});
+            ivo = new Profesores(new bool[22] {false,true,false,true,false,false,false,true,false,false,false,true,false,false,false,false,false,false,false,true,true,false});
+            jero = new Profesores(new bool[22] {false,true,true,true,false,true,false,true,false,false,true,true,false,false,false,false,false,false,true,true,true,false});
+            julieta = new Profesores(new bool[22] {true,true,true,true,false,false,false,false,false,false,true,false,true,false,false,false,false,false,false,true,true,true});
+            ariel = new Profesores(new bool[22] {false,true,true,true,true,false,false,false,true,true,true,true,false,true,false,false,true,false,true,true,true,false});
+            natali = new Profesores(new bool[22] {true,true,false,true,true,false,false,false,false,true,false,false,false,false, false,false,false,false,false,true,true,false});
+            micaela = new Profesores(new bool[22] {true,true,true,true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false });
+            aro = new Profesores(new bool[22] { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
+            vena = new Profesores(new bool[22] { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
+            roberto = new Profesores(new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
 
-            dataGridView1.DataSource = ds.Tables["profes"];
+
         }
-
-
-
-
         private void btnSi_Click(object sender, EventArgs e)
         {
-            if (NroPreg == 1)
+            if (num == 22)
             {
-                lblPreguntas.Text = "Es profesor/a de tic?";
-                NroPreg++;
-                actualizarBase("preg1", 200);
+                getProfesor();
             }
-
-            else if (NroPreg == 2)
+            else
             {
-                lblPreguntas.Text = "Trabaja en ort hace más de 3 años?";
-                NroPreg++;
-                actualizarBase("preg2", 55);
+                response.Append(true);
+                label1.Text = pregs[num];
+                ++num;
             }
-
-            else if (NroPreg == 3)
-            {
-                lblPreguntas.Text = "Es buena onda?";
-                NroPreg++;
-                actualizarBase("preg3", 10);
-            }
-
-            else if (NroPreg == 4)
-            {
-                lblPreguntas.Text = "Trabaja en el área de programación?";
-                NroPreg++;
-                actualizarBase("preg4", 52);
-            }
-
-            else if (NroPreg == 5)
-            {
-                lblPreguntas.Text = "Trabaja en el área de arte?";
-                NroPreg++;
-                actualizarBase("preg5", 31);
-            }
-
-            else if (NroPreg == 6)
-            {
-                lblPreguntas.Text = "Es tambien el director de TIC?";
-                NroPreg++;
-                actualizarBase("preg6", 10);
-            }
-
-            else if (NroPreg == 7)
-            {
-                //Seria Daro
-                NroPreg = 23;
-                actualizarBase("preg7", 1000);
-                Decicion();
-            }
-
-            else if (NroPreg == 8)
-            {
-                lblPreguntas.Text = "Es rubi@?";
-                NroPreg++;
-                actualizarBase("preg8", 66);
-            }
-
-            else if (NroPreg == 9)
-            {
-                lblPreguntas.Text = "Usa anteojos?";
-                NroPreg++;
-                actualizarBase("preg9", 14);
-            }
-
-            else if (NroPreg == 10)
-            {
-                lblPreguntas.Text = "Su personaje tiene más de 30 años?";
-                NroPreg++;
-                actualizarBase("preg10", 15);
-            }
-
-            else if (NroPreg == 11)
-            {
-                lblPreguntas.Text = "Tiene barba?";
-                NroPreg++;
-                actualizarBase("preg11", 88);
-            }
-
-            else if (NroPreg == 12)
-            {
-                lblPreguntas.Text = "Su personaje suele usar bufanda?";
-                NroPreg++;
-                actualizarBase("preg12", 18);
-            }
-
-            else if (NroPreg == 13)
-            {
-                lblPreguntas.Text = "Su personaje tiene los ojos claros?";
-                NroPreg++;
-                actualizarBase("preg13", 13);
-            }
-
-            else if (NroPreg == 14)
-            {
-                lblPreguntas.Text = "Su personaje es actualmente MEP?";
-                NroPreg++;
-                actualizarBase("preg14", 111);
-            }
-
-            else if (NroPreg == 15)
-            {
-                lblPreguntas.Text = "Su personaje antes era un MEP?";
-                NroPreg++;
-                actualizarBase("preg15", 9);
-            }
-
-            else if (NroPreg == 16)
-            {
-                lblPreguntas.Text = "Su profesor llega tarde?";
-                NroPreg++;
-                actualizarBase("preg16", 22);
-            }
-
-            else if (NroPreg == 17)
-            {
-                lblPreguntas.Text = "Tu personaje te amenaza para sacarte de TIC?";
-                NroPreg++;
-                actualizarBase("preg17", 90);
-            }
-
-            else if (NroPreg == 18)
-            {
-                lblPreguntas.Text = "Tiene hijos?";
-                NroPreg++;
-                actualizarBase("preg18", 10);
-            }
-
-            else if (NroPreg == 19)
-            {
-                lblPreguntas.Text = "Te deja tareas?";
-                NroPreg++;
-                actualizarBase("preg19", 40);
-            }
-
-            else if (NroPreg == 20)
-            {
-                lblPreguntas.Text = "Tu profesor te pondría una prueba/formulario?";
-                NroPreg++;
-                actualizarBase("preg20", 10);
-            }
-
-            else if (NroPreg == 21)
-            {
-                lblPreguntas.Text = "Tiene rulos?";
-                NroPreg++;
-                actualizarBase("preg21", 70);
-            }
-
-            else if (NroPreg == 22)
-            {
-                actualizarBase("preg22", 10);
-                Decicion();
-
-
-            }
-
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
-            if (NroPreg == 1)
+            if (num == 22)
             {
-                lblPreguntas.Text = "Es profesor/a de tic?";
-                NroPreg++;
+                getProfesor();
             }
-
-            else if (NroPreg == 2)
+            else
             {
-                lblPreguntas.Text = "Trabaja en ort hace más de 3 años?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 3)
-            {
-                lblPreguntas.Text = "Es buena onda?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 4)
-            {
-                lblPreguntas.Text = "Trabaja en el área de programación?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 5)
-            {
-                lblPreguntas.Text = "Trabaja en el área de arte?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 6)
-            {
-                lblPreguntas.Text = "Es tambien el director de TIC?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 7)
-            {
-                lblPreguntas.Text = "Es alt@?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 8)
-            {
-                lblPreguntas.Text = "Es rubi@?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 9)
-            {
-                lblPreguntas.Text = "Usa anteojos?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 10)
-            {
-                lblPreguntas.Text = "Su personaje tiene más de 30 años?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 11)
-            {
-                lblPreguntas.Text = "Tiene barba?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 12)
-            {
-                lblPreguntas.Text = "Su personaje suele usar bufanda?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 13)
-            {
-                lblPreguntas.Text = "Su personaje tiene los ojos claros?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 14)
-            {
-                lblPreguntas.Text = "Su personaje es actualmente MEP?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 15)
-            {
-                lblPreguntas.Text = "Su personaje antes era un MEP?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 16)
-            {
-                lblPreguntas.Text = "Su profesor llega tarde?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 17)
-            {
-                lblPreguntas.Text = "Tu personaje te amenaza para sacarte de TIC?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 18)
-            {
-                lblPreguntas.Text = "Tiene hijos?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 19)
-            {
-                lblPreguntas.Text = "Te deja tareas?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 20)
-            {
-                lblPreguntas.Text = "Tu profesor te pondría una prueba/formulario?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 21)
-            {
-                lblPreguntas.Text = "Tiene rulos?";
-                NroPreg++;
-            }
-
-            else if (NroPreg == 22)
-            {
-                Decicion();
+                response.Append(false);
+                label1.Text = pregs[num];
+                ++num;
             }
         }
 
-
-        private void actualizarBase(string pregunta, int punto)
+        private void lblPreguntas_Click(object sender, EventArgs e)
         {
-            OleDbConnection conexion = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source =.\Acess proyecto.accdb");
-            conexion.Open();
 
-            //Llamar los puntos que ya estan
-            sql = "SELECT id,nombre,puntos FROM profes WHERE "+pregunta+" = 'si'";
-            OleDbCommand cmd = new OleDbCommand(sql, conexion);
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            da.Fill(ds, "profes");
-            conexion.Close();
+        }
 
-            conexion.Open();
-            for (int i = (ds.Tables["profes"].Rows.Count - 1); i > 0; i--)
+        private string getProfesor()
+        {
+            dario.getPoint(response);
+            ruben.getPoint(response);
+            pau.getPoint(response);
+            caro.getPoint(response);
+            lu.getPoint(response);
+            chona.getPoint(response);
+            mati.getPoint(response);
+            joaco.getPoint(response);
+            ranzo.getPoint(response);
+            ivo.getPoint(response);
+            jero.getPoint(response);
+            julieta.getPoint(response);
+            ariel.getPoint(response);
+            natali.getPoint(response);
+            micaela.getPoint(response);
+            aro.getPoint(response);
+            vena.getPoint(response);
+            roberto.getPoint(response);
+
+            for (int i = 0; i < 18; ++i)
             {
-                //subir los nuevos puntos
-                puntos_finales = Convert.ToInt32(ds.Tables["profes"].Rows[i]["puntos"].ToString()) + punto;
-                id = Convert.ToInt32(ds.Tables["profes"].Rows[i]["id"].ToString());
-
-                sql = "UPDATE profes SET puntos = "+puntos_finales+ " WHERE " + pregunta + " = 'si' AND id = "+id+""; 
-                cmd = new OleDbCommand(sql, conexion);
-                cmd.ExecuteNonQuery();
+                
             }
-            
-            conexion.Close();
-            ds.Clear();
+            return "";
         }
-
-
-        private void Decicion()
-        {
-            OleDbConnection conexion = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = |DataDirectory|\\Acess proyecto.accdb");
-            conexion.Open();
-            
-            sql = "SELECT nombre,puntos  FROM profes WHERE puntos = (SELECT MAX(puntos) FROM profes)";
-            OleDbCommand cmd = new OleDbCommand(sql, conexion);
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            da.Fill(ds, "profes");
-            conexion.Close();
-            profefinal = ds.Tables["profes"].Rows[0]["nombre"].ToString();
-
-            MessageBox.Show(profefinal);
-
-            conexion.Open();
-            sql = "UPDATE profes SET puntos = 0";
-            cmd = new OleDbCommand(sql, conexion);
-            cmd.ExecuteNonQuery();
-            conexion.Close();
-        }
-
-        private void actualizarFondo()
-        {
-            Random rnd = new Random();
-            if (rnd = )
-        }
-
-
-
     }
+    public class Profesores{
+        private int point = 0;
+        private bool[] data = new bool[22];
+
+        public Profesores(bool[] Gdata)
+        {
+            data = Gdata;
+        }
+        public bool GetAttrib(int position)
+        {
+            return data[position];
+        }
+        public void AddPoint()
+        {
+            ++point;
+        }
+        public int getPoint(bool[] Fdata)
+        {
+            for(int i = 0; i < 22; ++i)
+            {
+                if (data[i] == Fdata[i])
+                {
+                    point++;
+                }
+            }
+            return point;
+        }
+    }
+    // No me siento orgulloso de este codigo...
 }
