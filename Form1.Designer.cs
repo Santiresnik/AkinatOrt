@@ -93,7 +93,7 @@ namespace AkinatOrt
             this.btntemasf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btntemasf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntemasf.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btntemasf.Location = new System.Drawing.Point(109, 593);
+            this.btntemasf.Location = new System.Drawing.Point(100, 593);
             this.btntemasf.Name = "btntemasf";
             this.btntemasf.Size = new System.Drawing.Size(214, 92);
             this.btntemasf.TabIndex = 4;
