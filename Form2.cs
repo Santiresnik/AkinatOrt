@@ -16,6 +16,8 @@ namespace AkinatOrt
         //Contador de pregunta
         private int num = 0;
         private bool[] response = new bool[22];
+        private string[] names = {"Dario", "Ruben", "Pau", "Caro", "Lu", "Chona", "Mati", "Joaco", "Ranzo", "Aro", "Ivo", "Jero", "Juli", "Ariel", "Natali", "Mica", "Vena", "Roberto"};
+        private Dictionary<string, int> points = new Dictionary<string, int>();
         Dictionary<string, bool[]> profesores = new Dictionary<string, bool[]>();
         
         // Profesores
@@ -58,38 +60,59 @@ namespace AkinatOrt
 
         private void juego_Load(object sender, EventArgs e)
         {
+            //Puntos de profesores
+            points.Add("Dario", 0);
+            points.Add("Ruben", 0);
+            points.Add("Pau", 0);
+            points.Add("Caro", 0);
+            points.Add("Lu", 0);
+            points.Add("Chona", 0);
+            points.Add("Mati", 0);
+            points.Add("Joaco", 0);
+            points.Add("Ranzo", 0);
+            points.Add("Ivo", 0);
+            points.Add("Jero", 0);
+            points.Add("Juli", 0);
+            points.Add("Ariel", 0);
+            points.Add("Natali", 0);
+            points.Add("Mica", 0);
+            points.Add("Aro", 0);
+            points.Add("Vena", 0);
+            points.Add("Roberto", 0);
+
             //Cargar los profesores
-            profesores.Add("Dario",new bool[22] { false, true,true, true, true, false, false, true, false, false, true, true, false, false, false, false, true, true, true, true, false, false} );
-            profesores.Add("Ruben", new bool[22] { false, true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, true, false, true, false, false });
-            profesores.Add("Pau", new bool[22] { true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
-            profesores.Add("Caro", new bool[22] { true, true, false, true, false, false, false, false, true, false, false, false, true, true, true, true, true, false, false, true, true, false });
-            profesores.Add("Lu", new bool[22] { true, true, false, true, true, false, false, false, true, false, false, false, false, false, true, true, false, false, false, false, false, false });
-            profesores.Add("Chona", new bool[21] { false, false, false, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false });
-            profesores.Add("Mati", new bool[22] { false, false, false, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false });
-            profesores.Add("Joaco", new bool[22] { false, false, true, true, true, false, false, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true });
-            profesores.Add("Ranzo", new bool[22] { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
-            profesores.Add("Ivo", new bool[22] { false, true, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, true, false });
-            profesores.Add("Jero", new bool[22] { false, true, true, true, false, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
-            profesores.Add("Juli", new bool[22] { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, true, true, true });
-            profesores.Add("Ariel", new bool[22] { false, true, true, true, true, false, false, false, true, true, true, true, false, true, false, false, true, false, true, true, true, false });
-            profesores.Add("Natali")
-            natali = new Profesores(new bool[22] {true,true,false,true,true,false,false,false,false,true,false,false,false,false, false,false,false,false,false,true,true,false});
-            micaela = new Profesores(new bool[22] {true,true,true,true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false });
-            aro = new Profesores(new bool[22] { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
-            vena = new Profesores(new bool[22] { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
-            roberto = new Profesores(new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
-
-
+            profesores.Add("Dario",new bool[22]    { false, true,true, true, true, false, false, true, false, false, true, true, false, false, false, false, true, true, true, true, false, false} );
+            profesores.Add("Ruben", new bool[22]   { false, true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, true, false, true, false, false });
+            profesores.Add("Pau", new bool[22]     { true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
+            profesores.Add("Caro", new bool[22]    { true, true, false, true, false, false, false, false, true, false, false, false, true, true, true, true, true, false, false, true, true, false });
+            profesores.Add("Lu", new bool[22]      { true, true, false, true, true, false, false, false, true, false, false, false, false, false, true, true, false, false, false, false, false, false });
+            profesores.Add("Chona", new bool[22]   { false, false, false,true, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false });
+            profesores.Add("Mati", new bool[22]    { false, false, false, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false });
+            profesores.Add("Joaco", new bool[22]   { false, false, true, true, true, false, false, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true });
+            profesores.Add("Ranzo", new bool[22]   { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
+            profesores.Add("Ivo", new bool[22]     { false, true, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, true, false });
+            profesores.Add("Jero", new bool[22]    { false, true, true, true, false, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
+            profesores.Add("Juli", new bool[22]    { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, true, true, true });
+            profesores.Add("Ariel", new bool[22]   { false, true, true, true, true, false, false, false, true, true, true, true, false, true, false, false, true, false, true, true, true, false });
+            profesores.Add("Natali", new bool[22]  { true, true, false, true, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, true, false });
+            profesores.Add("Mica", new bool[22]    { true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false });
+            profesores.Add("Aro", new bool[22]     { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
+            profesores.Add("Vena", new bool[22]    { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
+            profesores.Add("Roberto", new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
         }
         private void btnSi_Click(object sender, EventArgs e)
         {
             if (num == 22)
             {
-                getProfesor();
+                label1.Text = getProfesor();
+            }
+            if(num == 7)
+            {
+                label1.Text = "Dario";
             }
             else
             {
-                response.Append(true);
+                response[num] = true;
                 label1.Text = pregs[num];
                 ++num;
             }
@@ -99,11 +122,11 @@ namespace AkinatOrt
         {
             if (num == 22)
             {
-                getProfesor();
+                label1.Text = getProfesor();
             }
             else
             {
-                response.Append(false);
+                response[num] = false;
                 label1.Text = pregs[num];
                 ++num;
             }
@@ -116,30 +139,27 @@ namespace AkinatOrt
 
         private string getProfesor()
         {
-            dario.getPoint(response);
-            ruben.getPoint(response);
-            pau.getPoint(response);
-            caro.getPoint(response);
-            lu.getPoint(response);
-            chona.getPoint(response);
-            mati.getPoint(response);
-            joaco.getPoint(response);
-            ranzo.getPoint(response);
-            ivo.getPoint(response);
-            jero.getPoint(response);
-            julieta.getPoint(response);
-            ariel.getPoint(response);
-            natali.getPoint(response);
-            micaela.getPoint(response);
-            aro.getPoint(response);
-            vena.getPoint(response);
-            roberto.getPoint(response);
-
-            for (int i = 0; i < 18; ++i)
-            {
-                
+            for(int i = 0; i < 18; ++i)
+            {   
+                for(int j = 0; j <= 21; ++j)
+                {
+                    if(response[j] == profesores[names[i]][j])
+                    {
+                        points[names[i]] += 1;
+                    }
+                }
             }
+
+            for(int i = 0; i < 18; ++i)
+            {
+                if(points[names[i]] == points.Values.Max())
+                {
+                    return names[i];
+                }
+            }
+            label1.Text = points.Values.Max().ToString();
             return "";
+
         }
     }
     public class Profesores{
@@ -168,6 +188,7 @@ namespace AkinatOrt
                 }
             }
             return point;
+
         }
     }
     // No me siento orgulloso de este codigo...
