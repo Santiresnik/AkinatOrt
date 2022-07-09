@@ -29,9 +29,9 @@ namespace AkinatOrt
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
             this.btnJugar = new System.Windows.Forms.Button();
             this.btnCreditos = new System.Windows.Forms.Button();
-            this.btnTemas = new System.Windows.Forms.Button();
             this.btntemasf = new System.Windows.Forms.Button();
             this.btnTutorial = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,6 +40,9 @@ namespace AkinatOrt
             // 
             // btnJugar
             // 
+            this.btnJugar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnJugar.BackColor = System.Drawing.Color.Transparent;
             this.btnJugar.FlatAppearance.BorderSize = 0;
             this.btnJugar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -56,6 +59,9 @@ namespace AkinatOrt
             // 
             // btnCreditos
             // 
+            this.btnCreditos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreditos.BackColor = System.Drawing.Color.Transparent;
             this.btnCreditos.FlatAppearance.BorderSize = 0;
             this.btnCreditos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -66,27 +72,14 @@ namespace AkinatOrt
             this.btnCreditos.Name = "btnCreditos";
             this.btnCreditos.Size = new System.Drawing.Size(104, 100);
             this.btnCreditos.TabIndex = 1;
-            this.btnCreditos.Text = "Creditos";
             this.btnCreditos.UseVisualStyleBackColor = false;
             this.btnCreditos.Click += new System.EventHandler(this.btnCreditos_Click);
             // 
-            // btnTemas
-            // 
-            this.btnTemas.BackColor = System.Drawing.Color.Transparent;
-            this.btnTemas.FlatAppearance.BorderSize = 0;
-            this.btnTemas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnTemas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnTemas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnTemas.Location = new System.Drawing.Point(122, 691);
-            this.btnTemas.Name = "btnTemas";
-            this.btnTemas.Size = new System.Drawing.Size(179, 121);
-            this.btnTemas.TabIndex = 2;
-            this.btnTemas.Text = "Temas";
-            this.btnTemas.UseVisualStyleBackColor = false;
-            // 
             // btntemasf
             // 
+            this.btntemasf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btntemasf.BackColor = System.Drawing.Color.Transparent;
             this.btntemasf.FlatAppearance.BorderSize = 0;
             this.btntemasf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -103,6 +96,9 @@ namespace AkinatOrt
             // 
             // btnTutorial
             // 
+            this.btnTutorial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTutorial.BackColor = System.Drawing.Color.Transparent;
             this.btnTutorial.FlatAppearance.BorderSize = 0;
             this.btnTutorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -118,6 +114,7 @@ namespace AkinatOrt
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::AkinatOrt.Properties.Resources.Akinatort2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -138,9 +135,9 @@ namespace AkinatOrt
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnTutorial);
             this.Controls.Add(this.btntemasf);
-            this.Controls.Add(this.btnTemas);
             this.Controls.Add(this.btnCreditos);
             this.Controls.Add(this.btnJugar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "principal";
             this.Text = "AkinatOrt";
             this.Load += new System.EventHandler(this.principal_Load);
@@ -153,7 +150,6 @@ namespace AkinatOrt
 
         private System.Windows.Forms.Button btnJugar;
         private System.Windows.Forms.Button btnCreditos;
-        private System.Windows.Forms.Button btnTemas;
         private System.Windows.Forms.Button btntemasf;
         private System.Windows.Forms.Button btnTutorial;
         private System.Windows.Forms.PictureBox pictureBox1;
