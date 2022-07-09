@@ -22,10 +22,6 @@ namespace AkinatOrt
         // Profesores
         //Profesores dario, ruben, pau, caro, lu, chona, mati, joaco, ranzo, aro, ivo, jero, julieta, ariel, natali, micaela, vena, roberto;
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         //Array de preguntas(22)
         string[] pregs  = { 
@@ -59,6 +55,7 @@ namespace AkinatOrt
 
         private void juego_Load(object sender, EventArgs e)
         {
+            actualizarFondo();
             //Puntos de profesores
             points.Add("Dario", 0);
             points.Add("Ruben", 0);
@@ -115,6 +112,7 @@ namespace AkinatOrt
                 label1.Text = pregs[num];
                 ++num;
             }
+            actualizarFondo();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
@@ -129,6 +127,7 @@ namespace AkinatOrt
                 label1.Text = pregs[num];
                 ++num;
             }
+            actualizarFondo();
         }
 
         private void lblPreguntas_Click(object sender, EventArgs e)
@@ -160,6 +159,72 @@ namespace AkinatOrt
             return "";
 
         }
+        private void actualizarFondo()
+        {
+            Random rnd = new Random();
+            int random = rnd.Next(1, 4);
+
+            //caso default
+            if (random == 1 && principal.tema == "default")
+            {
+                pbDaro.Image = Properties.Resources.dario_default_contento;
+            }
+            else if (random == 2 && principal.tema == "default")
+            {
+                pbDaro.Image = Properties.Resources.dario_default_triste;
+            }
+            else if (random == 3 && principal.tema == "default")
+            {
+                pbDaro.Image = Properties.Resources.dario_default_sonriendo;
+            }
+            //Caso playa
+            else if (random == 1 && principal.tema == "playa")
+            {
+                pbDaro.Image = Properties.Resources.dario_playa_contento;
+            }
+
+            else if (random == 2 && principal.tema == "playa")
+            {
+                pbDaro.Image = Properties.Resources.dario_playa_triste;
+            }
+
+            else if (random == 3 && principal.tema == "playa")
+            {
+                pbDaro.Image = Properties.Resources.dario_playa_sonriendo;
+            }
+            //Caso otaku
+            else if (random == 1 && principal.tema == "otaku")
+            {
+                pbDaro.Image = Properties.Resources.dario_otaku_contento;
+            }
+
+            else if (random == 2 && principal.tema == "otaku")
+            {
+                pbDaro.Image = Properties.Resources.dario_otaku_sonriendo;
+            }
+
+            else if (random == 3 && principal.tema == "otaku")
+            {
+                pbDaro.Image = Properties.Resources.dario_otaku_triste;
+            }
+            //caso payaso
+            else if (random == 1 && principal.tema == "payaso")
+            {
+                pbDaro.Image = Properties.Resources.dario_payaso_contento;
+            }
+
+            else if (random == 2 && principal.tema == "payaso")
+            {
+                pbDaro.Image = Properties.Resources.dario_payaso_sonriendo;
+            }
+
+            else if (random == 3 && principal.tema == "payaso")
+            {
+                pbDaro.Image = Properties.Resources.dario_payaso_triste;
+            }
+
+
+        }
     }
     public class Profesores{
         private int point = 0;
@@ -189,6 +254,8 @@ namespace AkinatOrt
             return point;
 
         }
+
     }
+
     // No me siento orgulloso de este codigo...
 }

@@ -101,7 +101,7 @@
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -202,6 +202,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dario sonrie normal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\dario default contento.jpg" />
+    <None Include="Resources\volumen pant.png" />
+    <None Include="Resources\Pantalla Volumen.png" />
+    <None Include="Resources\Main Menu AkinatOrt.jpg" />
+    <None Include="Resources\fondo-payaso.jpg" />
+    <None Include="Resources\dario playa triste.jpg" />
+    <None Include="Resources\dario playa sonriendo.jpg" />
+    <None Include="Resources\dario playa contento.jpg" />
+    <None Include="Resources\dario payaso triste.png" />
+    <None Include="Resources\dario payaso sonriendo.jpg" />
+    <None Include="Resources\dario payaso contento.jpg" />
+    <None Include="Resources\dario otaku triste.jpg" />
+    <None Include="Resources\dario otaku sonriendo.jpg" />
+    <None Include="Resources\dario otaku contento.jpg" />
+    <None Include="Resources\dario default triste.jpg" />
+    <None Include="Resources\dario default sonriendo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

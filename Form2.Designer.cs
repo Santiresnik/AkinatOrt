@@ -31,9 +31,9 @@ namespace AkinatOrt
         {
             this.btnSi = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pbDaro = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDaro)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSi
@@ -66,15 +66,6 @@ namespace AkinatOrt
             this.btnNo.UseVisualStyleBackColor = false;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 76);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(631, 345);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
@@ -88,6 +79,14 @@ namespace AkinatOrt
             this.label1.Text = "Inicio";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbDaro
+            // 
+            this.pbDaro.Location = new System.Drawing.Point(95, 95);
+            this.pbDaro.Name = "pbDaro";
+            this.pbDaro.Size = new System.Drawing.Size(513, 367);
+            this.pbDaro.TabIndex = 5;
+            this.pbDaro.TabStop = false;
+            // 
             // juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,14 +94,14 @@ namespace AkinatOrt
             this.BackgroundImage = global::AkinatOrt.Properties.Resources.Pantalla_Juego_Back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 719);
+            this.Controls.Add(this.pbDaro);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnSi);
             this.Name = "juego";
             this.Text = "Juego";
             this.Load += new System.EventHandler(this.juego_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDaro)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,7 +110,7 @@ namespace AkinatOrt
 
         private System.Windows.Forms.Button btnSi;
         private System.Windows.Forms.Button btnNo;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pbDaro;
     }
 }

@@ -181,4 +181,97 @@
   <data name="Pantalla_Juego_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pantalla Juego Back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Akinatort21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Akinatort2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="akinatort_titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\akinatort titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credits1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\credits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dario_contento_normal31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dario contento normal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dario_contento_otaku31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dario contento otaku3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dario_contento_payaso_3_con_pintura1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dario contento payaso-3 con pintura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dario_contento_playa_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dario contento playa-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_default_contento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario default contento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_default_sonriendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario default sonriendo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_default_triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario default triste.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_otaku_contento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario otaku contento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_otaku_sonriendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario otaku sonriendo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_otaku_triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario otaku triste.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_payaso_contento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario payaso contento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_payaso_sonriendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario payaso sonriendo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_payaso_triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario payaso triste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_playa_contento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario playa contento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_playa_sonriendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario playa sonriendo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dario_playa_triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dario playa triste.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_otaku1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo otaku.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_payaso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-payaso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_playa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo playa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Main_Menu_AkinatOrt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main Menu AkinatOrt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Main_Menu_AkinatOrt__1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main Menu AkinatOrt (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pantalla_Juego_Back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pantalla Juego Back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pantalla_Volumen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pantalla Volumen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personajes11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personajes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personajes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personajes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="punto_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\punto blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tutorial1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tutorial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volumen_pant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumen pant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

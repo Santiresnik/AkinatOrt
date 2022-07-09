@@ -19,10 +19,10 @@ namespace AkinatOrt.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace AkinatOrt.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AkinatOrt.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace AkinatOrt.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Akinatort2 {
+        public static System.Drawing.Bitmap akinatort_titulo {
+            get {
+                object obj = ResourceManager.GetObject("akinatort_titulo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Akinatort2 {
             get {
                 object obj = ResourceManager.GetObject("Akinatort2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +83,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap credits {
+        public static System.Drawing.Bitmap Akinatort21 {
+            get {
+                object obj = ResourceManager.GetObject("Akinatort21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap credits {
             get {
                 object obj = ResourceManager.GetObject("credits", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +103,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_contento_normal3 {
+        public static System.Drawing.Bitmap credits1 {
+            get {
+                object obj = ResourceManager.GetObject("credits1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dario_contento_normal3 {
             get {
                 object obj = ResourceManager.GetObject("Dario_contento_normal3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +123,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_contento_otaku3 {
+        public static System.Drawing.Bitmap Dario_contento_normal31 {
+            get {
+                object obj = ResourceManager.GetObject("Dario_contento_normal31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dario_contento_otaku3 {
             get {
                 object obj = ResourceManager.GetObject("Dario_contento_otaku3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +143,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_contento_payaso_3_con_pintura {
+        public static System.Drawing.Bitmap Dario_contento_otaku31 {
+            get {
+                object obj = ResourceManager.GetObject("Dario_contento_otaku31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dario_contento_payaso_3_con_pintura {
             get {
                 object obj = ResourceManager.GetObject("Dario_contento_payaso_3_con_pintura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +163,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_contento_playa_3 {
+        public static System.Drawing.Bitmap Dario_contento_payaso_3_con_pintura1 {
+            get {
+                object obj = ResourceManager.GetObject("Dario_contento_payaso_3_con_pintura1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dario_contento_playa_3 {
             get {
                 object obj = ResourceManager.GetObject("Dario_contento_playa_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +183,137 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_sonrie_normal1 {
+        public static System.Drawing.Bitmap Dario_contento_playa_31 {
+            get {
+                object obj = ResourceManager.GetObject("Dario_contento_playa_31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_default_contento {
+            get {
+                object obj = ResourceManager.GetObject("dario_default_contento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_default_sonriendo {
+            get {
+                object obj = ResourceManager.GetObject("dario_default_sonriendo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_default_triste {
+            get {
+                object obj = ResourceManager.GetObject("dario_default_triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_otaku_contento {
+            get {
+                object obj = ResourceManager.GetObject("dario_otaku_contento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_otaku_sonriendo {
+            get {
+                object obj = ResourceManager.GetObject("dario_otaku_sonriendo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_otaku_triste {
+            get {
+                object obj = ResourceManager.GetObject("dario_otaku_triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_payaso_contento {
+            get {
+                object obj = ResourceManager.GetObject("dario_payaso_contento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_payaso_sonriendo {
+            get {
+                object obj = ResourceManager.GetObject("dario_payaso_sonriendo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_payaso_triste {
+            get {
+                object obj = ResourceManager.GetObject("dario_payaso_triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_playa_contento {
+            get {
+                object obj = ResourceManager.GetObject("dario_playa_contento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_playa_sonriendo {
+            get {
+                object obj = ResourceManager.GetObject("dario_playa_sonriendo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dario_playa_triste {
+            get {
+                object obj = ResourceManager.GetObject("dario_playa_triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dario_sonrie_normal1 {
             get {
                 object obj = ResourceManager.GetObject("Dario_sonrie_normal1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +323,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_sonrie_otaku1 {
+        public static System.Drawing.Bitmap Dario_sonrie_otaku1 {
             get {
                 object obj = ResourceManager.GetObject("Dario_sonrie_otaku1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +333,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_sonrie_payaso_1_con_pintura {
+        public static System.Drawing.Bitmap Dario_sonrie_payaso_1_con_pintura {
             get {
                 object obj = ResourceManager.GetObject("Dario_sonrie_payaso_1_con_pintura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +343,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_sonrie_playa_1 {
+        public static System.Drawing.Bitmap Dario_sonrie_playa_1 {
             get {
                 object obj = ResourceManager.GetObject("Dario_sonrie_playa_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +353,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_triste_normal_2 {
+        public static System.Drawing.Bitmap Dario_triste_normal_2 {
             get {
                 object obj = ResourceManager.GetObject("Dario_triste_normal_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +363,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_triste_otaku_2 {
+        public static System.Drawing.Bitmap Dario_triste_otaku_2 {
             get {
                 object obj = ResourceManager.GetObject("Dario_triste_otaku_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +373,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_triste_payaso2_con_pintura {
+        public static System.Drawing.Bitmap Dario_triste_payaso2_con_pintura {
             get {
                 object obj = ResourceManager.GetObject("Dario_triste_payaso2_con_pintura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +383,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dario_triste_playa_2 {
+        public static System.Drawing.Bitmap Dario_triste_playa_2 {
             get {
                 object obj = ResourceManager.GetObject("Dario_triste_playa_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +393,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fondo_otaku {
+        public static System.Drawing.Bitmap fondo_otaku {
             get {
                 object obj = ResourceManager.GetObject("fondo_otaku", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +403,27 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fondo_playa {
+        public static System.Drawing.Bitmap fondo_otaku1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo_otaku1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo_payaso {
+            get {
+                object obj = ResourceManager.GetObject("fondo_payaso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo_playa {
             get {
                 object obj = ResourceManager.GetObject("fondo_playa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +433,27 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Main_Menu_AkinatOrt__1_ {
+        public static System.Drawing.Bitmap fondo_playa1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo_playa1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Main_Menu_AkinatOrt {
+            get {
+                object obj = ResourceManager.GetObject("Main_Menu_AkinatOrt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Main_Menu_AkinatOrt__1_ {
             get {
                 object obj = ResourceManager.GetObject("Main_Menu_AkinatOrt__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +463,17 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pantalla_Juego_Back {
+        public static System.Drawing.Bitmap Main_Menu_AkinatOrt__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Main_Menu_AkinatOrt__1_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Pantalla_Juego_Back {
             get {
                 object obj = ResourceManager.GetObject("Pantalla_Juego_Back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +483,27 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap personajes {
+        public static System.Drawing.Bitmap Pantalla_Juego_Back1 {
+            get {
+                object obj = ResourceManager.GetObject("Pantalla_Juego_Back1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Pantalla_Volumen {
+            get {
+                object obj = ResourceManager.GetObject("Pantalla_Volumen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap personajes {
             get {
                 object obj = ResourceManager.GetObject("personajes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +513,7 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap personajes1 {
+        public static System.Drawing.Bitmap personajes1 {
             get {
                 object obj = ResourceManager.GetObject("personajes1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,9 +523,59 @@ namespace AkinatOrt.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tutorial {
+        public static System.Drawing.Bitmap personajes11 {
+            get {
+                object obj = ResourceManager.GetObject("personajes11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap personajes2 {
+            get {
+                object obj = ResourceManager.GetObject("personajes2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap punto_blanco {
+            get {
+                object obj = ResourceManager.GetObject("punto_blanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tutorial {
             get {
                 object obj = ResourceManager.GetObject("tutorial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tutorial1 {
+            get {
+                object obj = ResourceManager.GetObject("tutorial1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap volumen_pant {
+            get {
+                object obj = ResourceManager.GetObject("volumen_pant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

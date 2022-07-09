@@ -42,5 +42,10 @@ namespace AkinatOrt
         {
             principal.tema = "Otaku";
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
