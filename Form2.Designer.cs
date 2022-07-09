@@ -86,6 +86,7 @@ namespace AkinatOrt
             this.pbDaro.Size = new System.Drawing.Size(513, 367);
             this.pbDaro.TabIndex = 5;
             this.pbDaro.TabStop = false;
+            this.pbDaro.Click += new System.EventHandler(this.pbDaro_Click);
             // 
             // juego
             // 

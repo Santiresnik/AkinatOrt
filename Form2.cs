@@ -55,7 +55,6 @@ namespace AkinatOrt
 
         private void juego_Load(object sender, EventArgs e)
         {
-            actualizarFondo();
             //Puntos de profesores
             points.Add("Dario", 0);
             points.Add("Ruben", 0);
@@ -111,8 +110,8 @@ namespace AkinatOrt
                 response[num] = true;
                 label1.Text = pregs[num];
                 ++num;
+                actualizarFondo();
             }
-            actualizarFondo();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
@@ -126,8 +125,8 @@ namespace AkinatOrt
                 response[num] = false;
                 label1.Text = pregs[num];
                 ++num;
+                actualizarFondo();
             }
-            actualizarFondo();
         }
 
         private void lblPreguntas_Click(object sender, EventArgs e)
@@ -165,64 +164,69 @@ namespace AkinatOrt
             int random = rnd.Next(1, 4);
 
             //caso default
-            if (random == 1 && principal.tema == "default")
+            if (random == 1 && principal.tema == "Default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_contento;
             }
-            else if (random == 2 && principal.tema == "default")
+            else if (random == 2 && principal.tema == "Default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_triste;
             }
-            else if (random == 3 && principal.tema == "default")
+            else if (random == 3 && principal.tema == "Default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_sonriendo;
             }
             //Caso playa
-            else if (random == 1 && principal.tema == "playa")
+            else if (random == 1 && principal.tema == "Playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_contento;
             }
 
-            else if (random == 2 && principal.tema == "playa")
+            else if (random == 2 && principal.tema == "Playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_triste;
             }
 
-            else if (random == 3 && principal.tema == "playa")
+            else if (random == 3 && principal.tema == "Playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_sonriendo;
             }
             //Caso otaku
-            else if (random == 1 && principal.tema == "otaku")
+            else if (random == 1 && principal.tema == "Otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_contento;
             }
 
-            else if (random == 2 && principal.tema == "otaku")
+            else if (random == 2 && principal.tema == "Otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_sonriendo;
             }
 
-            else if (random == 3 && principal.tema == "otaku")
+            else if (random == 3 && principal.tema == "Otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_triste;
             }
             //caso payaso
-            else if (random == 1 && principal.tema == "payaso")
+            else if (random == 1 && principal.tema == "Payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_contento;
             }
 
-            else if (random == 2 && principal.tema == "payaso")
+            else if (random == 2 && principal.tema == "Payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_sonriendo;
             }
 
-            else if (random == 3 && principal.tema == "payaso")
+            else if (random == 3 && principal.tema == "Payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_triste;
             }
 
+
+        }
+
+        private void pbDaro_Click(object sender, EventArgs e)
+        {
 
         }
     }
