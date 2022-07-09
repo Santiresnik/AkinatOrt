@@ -90,12 +90,12 @@ namespace AkinatOrt
             profesores.Add("Jero", new bool[22]    { false, true, true, true, false, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Juli", new bool[22]    { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, true, true });
             profesores.Add("Nacho", new bool[22]   { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
-            profesores.Add("Julian", new bool[22] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
+            profesores.Add("Julian", new bool[22]  { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
             profesores.Add("Mica", new bool[22]    { true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false });
             profesores.Add("Aro", new bool[22]     { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Vena", new bool[22]    { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Roberto", new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
-            profesores.Add("Luca", new bool[22] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
+            profesores.Add("Luca", new bool[22]    { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
 
             actualizarFondo();
         }
@@ -104,6 +104,10 @@ namespace AkinatOrt
             if (num == 22)
             {
                 label1.Text = getProfesor();
+            }
+            else if (num == 4)
+            {
+                btnNo.Show();
             }
             if(num == 7)
             {
@@ -123,6 +127,10 @@ namespace AkinatOrt
             if (num == 22)
             {
                 label1.Text = getProfesor();
+            }
+            else if (num == 4)
+            {
+                btnNo.Hide();
             }
             else
             {
