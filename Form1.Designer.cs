@@ -68,9 +68,9 @@ namespace AkinatOrt
             this.btnCreditos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCreditos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreditos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnCreditos.Location = new System.Drawing.Point(197, 229);
+            this.btnCreditos.Location = new System.Drawing.Point(197, 240);
             this.btnCreditos.Name = "btnCreditos";
-            this.btnCreditos.Size = new System.Drawing.Size(104, 100);
+            this.btnCreditos.Size = new System.Drawing.Size(104, 89);
             this.btnCreditos.TabIndex = 1;
             this.btnCreditos.UseVisualStyleBackColor = false;
             this.btnCreditos.Click += new System.EventHandler(this.btnCreditos_Click);
@@ -118,9 +118,9 @@ namespace AkinatOrt
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::AkinatOrt.Properties.Resources.Akinatort2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(-14, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(-16, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(711, 250);
+            this.pictureBox1.Size = new System.Drawing.Size(711, 234);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);

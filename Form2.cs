@@ -26,9 +26,9 @@ namespace AkinatOrt
         //Array de preguntas(22)
         string[] pregs  = { 
             "¿Su personaje es mujer?",
-            "¿Es profeso/a de tic?",
-            "¿Trabaja en ort hace mas de 3 años?",
-            "¿Es buena honda?",
+            "¿Es profesor/a de tic?",
+            "¿Trabajó en ort hace mas de 3 años?",
+            "¿Es buena onda?",
             "¿Trabaja en el area de la programación?",
             "¿Trabaja en el area de diseño?",
             "¿Es tambien el director de la especialidad tic?",
@@ -76,15 +76,15 @@ namespace AkinatOrt
             points.Add("Roberto", 0);
 
             //Cargar los profesores
-            profesores.Add("Dario",new bool[22]    { false, true,true, true, true, false, false, true, false, false, true, true, false, false, false, false, true, true, true, true, false, false} );
-            profesores.Add("Ruben", new bool[22]   { false, true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, true, false, true, false, false });
+            profesores.Add("Dario",new bool[7]     { false, true, true, true, false, false, true} );
+            profesores.Add("Ruben", new bool[22]   { false, false, true, true, false, false, false, false, false, true, true, false, true, false, false, false, true, true, true, false, true, false });
             profesores.Add("Pau", new bool[22]     { true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Caro", new bool[22]    { true, true, false, true, false, false, false, false, true, false, false, false, true, true, true, true, true, false, false, true, true, false });
-            profesores.Add("Lu", new bool[22]      { true, true, false, true, true, false, false, false, true, false, false, false, false, false, true, true, false, false, false, false, false, false });
-            profesores.Add("Chona", new bool[22]   { false, false, false,true, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false });
+            profesores.Add("Lu", new bool[22]      { true, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false });
+            profesores.Add("Chona", new bool[22]   { false, true, false,true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false, false });
             profesores.Add("Mati", new bool[22]    { false, false, false, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false });
-            profesores.Add("Joaco", new bool[22]   { false, false, true, true, true, false, false, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true });
-            profesores.Add("Ranzo", new bool[22]   { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
+            profesores.Add("Joaco", new bool[22]   { false, true, true, true, true, false, false, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true });
+            profesores.Add("Ranzo", new bool[22]   { false, true, true, true, true, true, false, false, false, true, true, true, false, false, false, false, true, false, true, true, false, false });
             profesores.Add("Ivo", new bool[22]     { false, true, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, true, false });
             profesores.Add("Jero", new bool[22]    { false, true, true, true, false, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Juli", new bool[22]    { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, true, true, true });
@@ -94,6 +94,8 @@ namespace AkinatOrt
             profesores.Add("Aro", new bool[22]     { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Vena", new bool[22]    { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Roberto", new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
+
+            actualizarFondo();
         }
         private void btnSi_Click(object sender, EventArgs e)
         {
@@ -110,8 +112,8 @@ namespace AkinatOrt
                 response[num] = true;
                 label1.Text = pregs[num];
                 ++num;
-                actualizarFondo();
             }
+            actualizarFondo();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
@@ -125,8 +127,8 @@ namespace AkinatOrt
                 response[num] = false;
                 label1.Text = pregs[num];
                 ++num;
-                actualizarFondo();
             }
+            actualizarFondo();
         }
 
         private void lblPreguntas_Click(object sender, EventArgs e)
@@ -138,12 +140,16 @@ namespace AkinatOrt
         {
             for(int i = 0; i < 18; ++i)
             {   
-                for(int j = 0; j <= 21; ++j)
+                for(int j = 0; j <= 21; ++j )
                 {
-                    if(response[j] == profesores[names[i]][j])
+                    try
                     {
-                        points[names[i]] += 1;
+                        if (response[j] == profesores[names[i]][j])
+                        {
+                            points[names[i]] += 1;
+                        }
                     }
+                    catch { }
                 }
             }
 
@@ -156,68 +162,67 @@ namespace AkinatOrt
             }
             label1.Text = points.Values.Max().ToString();
             return "";
-
         }
-        private void actualizarFondo()
+        public void actualizarFondo()
         {
             Random rnd = new Random();
             int random = rnd.Next(1, 4);
 
             //caso default
-            if (random == 1 && principal.tema == "Default")
+            if (random == 1 && principal.tema == "default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_contento;
             }
-            else if (random == 2 && principal.tema == "Default")
+            else if (random == 2 && principal.tema == "default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_triste;
             }
-            else if (random == 3 && principal.tema == "Default")
+            else if (random == 3 && principal.tema == "default")
             {
                 pbDaro.Image = Properties.Resources.dario_default_sonriendo;
             }
             //Caso playa
-            else if (random == 1 && principal.tema == "Playa")
+            else if (random == 1 && principal.tema == "playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_contento;
             }
 
-            else if (random == 2 && principal.tema == "Playa")
+            else if (random == 2 && principal.tema == "playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_triste;
             }
 
-            else if (random == 3 && principal.tema == "Playa")
+            else if (random == 3 && principal.tema == "playa")
             {
                 pbDaro.Image = Properties.Resources.dario_playa_sonriendo;
             }
             //Caso otaku
-            else if (random == 1 && principal.tema == "Otaku")
+            else if (random == 1 && principal.tema == "otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_contento;
             }
 
-            else if (random == 2 && principal.tema == "Otaku")
+            else if (random == 2 && principal.tema == "otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_sonriendo;
             }
 
-            else if (random == 3 && principal.tema == "Otaku")
+            else if (random == 3 && principal.tema == "otaku")
             {
                 pbDaro.Image = Properties.Resources.dario_otaku_triste;
             }
             //caso payaso
-            else if (random == 1 && principal.tema == "Payaso")
+            else if (random == 1 && principal.tema == "payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_contento;
             }
 
-            else if (random == 2 && principal.tema == "Payaso")
+            else if (random == 2 && principal.tema == "payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_sonriendo;
             }
 
-            else if (random == 3 && principal.tema == "Payaso")
+            else if (random == 3 && principal.tema == "payaso")
             {
                 pbDaro.Image = Properties.Resources.dario_payaso_triste;
             }
@@ -229,36 +234,13 @@ namespace AkinatOrt
         {
 
         }
-    }
-    public class Profesores{
-        private int point = 0;
-        private bool[] data = new bool[22];
 
-        public Profesores(bool[] Gdata)
+        private void button1_Click(object sender, EventArgs e)
         {
-            data = Gdata;
+            principal principal = new principal();
+            principal.Show();
+            this.Hide();
         }
-        public bool GetAttrib(int position)
-        {
-            return data[position];
-        }
-        public void AddPoint()
-        {
-            ++point;
-        }
-        public int getPoint(bool[] Fdata)
-        {
-            for(int i = 0; i < 22; ++i)
-            {
-                if (data[i] == Fdata[i])
-                {
-                    point++;
-                }
-            }
-            return point;
-
-        }
-
     }
 
     // No me siento orgulloso de este codigo...

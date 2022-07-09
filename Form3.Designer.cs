@@ -98,6 +98,7 @@ namespace AkinatOrt
             this.groupBox1.Size = new System.Drawing.Size(50, 233);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox1
             // 

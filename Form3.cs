@@ -25,25 +25,30 @@ namespace AkinatOrt
 
         private void RbDefault_CheckedChanged(object sender, EventArgs e)
         {
-            principal.tema = "Default";
+            principal.tema = "default";
         }
 
         private void RbPlaya_CheckedChanged(object sender, EventArgs e)
         {
-            principal.tema = "Playa";
+            principal.tema = "playa";
         }
 
         private void Rbpayaso_CheckedChanged(object sender, EventArgs e)
         {
-            principal.tema = "Payaso";
+            principal.tema = "payaso";
         }
 
         private void RbOtaku_CheckedChanged(object sender, EventArgs e)
         {
-            principal.tema = "Otaku";
+            principal.tema = "otaku";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

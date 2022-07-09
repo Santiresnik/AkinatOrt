@@ -23,6 +23,7 @@ namespace AkinatOrt
         {
             juego juego = new juego();
             juego.Show();
+            this.Hide();
         }
 
         private void btnCreditos_Click(object sender, EventArgs e)
