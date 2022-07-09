@@ -15,7 +15,7 @@ namespace AkinatOrt
         //Contador de pregunta
         private int num = 0;
         private bool[] response = new bool[22];
-        private string[] names = {"Dario", "Ruben", "Pau", "Caro", "Lu", "Chona", "Mati", "Joaco", "Ranzo", "Aro", "Ivo", "Jero", "Juli", "Ariel", "Natali", "Mica", "Vena", "Roberto"};
+        private string[] names = {"Dario", "Ruben", "Pau", "Caro", "Lu", "Chona", "Mati", "Joaco", "Ranzo", "Aro", "Ivo", "Jero", "Juli", "Nacho", "Julian", "Mica", "Vena", "Roberto", "Luca"};
         private Dictionary<string, int> points = new Dictionary<string, int>();
         Dictionary<string, bool[]> profesores = new Dictionary<string, bool[]>();
         
@@ -68,12 +68,13 @@ namespace AkinatOrt
             points.Add("Ivo", 0);
             points.Add("Jero", 0);
             points.Add("Juli", 0);
-            points.Add("Ariel", 0);
-            points.Add("Natali", 0);
+            points.Add("Nacho", 0);
+            points.Add("Julian", 0);
             points.Add("Mica", 0);
             points.Add("Aro", 0);
             points.Add("Vena", 0);
             points.Add("Roberto", 0);
+            points.Add("Luca", 0);
 
             //Cargar los profesores
             profesores.Add("Dario",new bool[7]     { false, true, true, true, false, false, true} );
@@ -87,13 +88,14 @@ namespace AkinatOrt
             profesores.Add("Ranzo", new bool[22]   { false, true, true, true, true, true, false, false, false, true, true, true, false, false, false, false, true, false, true, true, false, false });
             profesores.Add("Ivo", new bool[22]     { false, true, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, true, false });
             profesores.Add("Jero", new bool[22]    { false, true, true, true, false, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
-            profesores.Add("Juli", new bool[22]    { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, true, true, true });
-            profesores.Add("Ariel", new bool[22]   { false, true, true, true, true, false, false, false, true, true, true, true, false, true, false, false, true, false, true, true, true, false });
-            profesores.Add("Natali", new bool[22]  { true, true, false, true, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, true, false });
+            profesores.Add("Juli", new bool[22]    { true, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false, true, true });
+            profesores.Add("Nacho", new bool[22]   { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
+            profesores.Add("Julian", new bool[22] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
             profesores.Add("Mica", new bool[22]    { true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false });
             profesores.Add("Aro", new bool[22]     { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Vena", new bool[22]    { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Roberto", new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
+            profesores.Add("Luca", new bool[22] { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
 
             actualizarFondo();
         }
@@ -138,7 +140,7 @@ namespace AkinatOrt
 
         private string getProfesor()
         {
-            for(int i = 0; i < 18; ++i)
+            for(int i = 0; i < 19; ++i)
             {   
                 for(int j = 0; j <= 21; ++j )
                 {
@@ -153,7 +155,7 @@ namespace AkinatOrt
                 }
             }
 
-            for(int i = 0; i < 18; ++i)
+            for(int i = 0; i < 19; ++i)
             {
                 if(points[names[i]] == points.Values.Max())
                 {
