@@ -105,11 +105,11 @@ namespace AkinatOrt
             {
                 label1.Text = getProfesor();
             }
-            else if (num == 4)
+            if (num == 4)
             {
                 btnNo.Show();
             }
-            if(num == 7)
+            if (num == 7)
             {
                 label1.Text = "Dario";
             }
