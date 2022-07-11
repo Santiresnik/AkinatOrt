@@ -27,15 +27,15 @@ namespace AkinatOrt
         string[] pregs  = { 
             "¿Su personaje es mujer?",
             "¿Es profesor/a de tic?",
-            "¿Trabajó en ort hace mas de 3 años?",
+            "¿Trabajó en ort hace más de 3 años?",
             "¿Es buena onda?",
-            "¿Trabaja en el area de la programación?",
-            "¿Trabaja en el area de diseño?",
+            "¿Trabaja en el área de la programación?",
+            "¿Trabaja en el área de diseño?",
             "¿Es tambien el director de la especialidad tic?",
             "¿Es alto/a?",
             "¿Es rubio/a?",
             "¿Usa anteojos?",
-            "¿Su personaje tiene mas de 30 años?",
+            "¿Su personaje tiene más de 30 años?",
             "¿Tiene barba?",
             "¿Su personaje suele usar bufanda?",
             "¿Su personaje tiene ojos claros?",
@@ -95,12 +95,15 @@ namespace AkinatOrt
             profesores.Add("Aro", new bool[22]     { false, true, true, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, true, true, true, false });
             profesores.Add("Vena", new bool[22]    { false, true, true, true, false, false, false, true, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Roberto", new bool[22] { false, true, true, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false });
-            profesores.Add("Luca", new bool[22]    { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }); //faltan resp
+            profesores.Add("Luca", new bool[22]    { false, false, false, true, true, false, false, false, false, false, false, false, false, false, true, true, true, false, false, false, false, true }); //faltan resp
 
             actualizarFondo();
         }
         private void btnSi_Click(object sender, EventArgs e)
-        {
+        {   if(num == 1)
+            {
+                        
+            }
             if (num == 22)
             {
                 label1.Text = getProfesor();
@@ -115,15 +118,23 @@ namespace AkinatOrt
             }
             else
             {
-                response[num] = true;
-                label1.Text = pregs[num];
-                ++num;
+                try
+                {
+                    response[num] = true;
+                    label1.Text = pregs[num];
+                    ++num;
+                }
+                catch { }
             }
             actualizarFondo();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
+            if(num == 0)
+            {
+
+            }
             if (num == 22)
             {
                 label1.Text = getProfesor();
@@ -134,9 +145,13 @@ namespace AkinatOrt
             }
             else
             {
-                response[num] = false;
-                label1.Text = pregs[num];
-                ++num;
+                try
+                {
+                    response[num] = false;
+                    label1.Text = pregs[num];
+                    ++num;
+                }
+                catch { }
             }
             actualizarFondo();
         }
