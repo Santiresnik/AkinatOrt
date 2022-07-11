@@ -77,7 +77,7 @@ namespace AkinatOrt
             points.Add("Luca", 0);
 
             //Cargar los profesores
-            profesores.Add("Dario",new bool[7]     { false, true, true, true, false, false, true} );
+            profesores.Add("Dario",new bool[22]     { false, true, true, true, false, false, true, false, true, true, true, false, false, true, false, true, true, true, false, false, true,false } );
             profesores.Add("Ruben", new bool[22]   { false, false, true, true, false, false, false, false, false, true, true, false, true, false, false, false, true, true, true, false, true, false });
             profesores.Add("Pau", new bool[22]     { true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Caro", new bool[22]    { true, true, false, true, false, false, false, false, true, false, false, false, true, true, true, true, true, false, false, true, true, false });
