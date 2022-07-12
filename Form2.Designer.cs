@@ -43,7 +43,7 @@ namespace AkinatOrt
             this.btnSi.BackColor = System.Drawing.Color.Transparent;
             this.btnSi.FlatAppearance.BorderSize = 0;
             this.btnSi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.btnSi.Location = new System.Drawing.Point(125, 601);
@@ -59,7 +59,7 @@ namespace AkinatOrt
             this.btnNo.BackColor = System.Drawing.Color.Transparent;
             this.btnNo.FlatAppearance.BorderSize = 0;
             this.btnNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.btnNo.Location = new System.Drawing.Point(344, 601);

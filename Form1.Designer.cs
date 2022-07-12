@@ -40,18 +40,16 @@ namespace AkinatOrt
             // 
             // btnJugar
             // 
-            this.btnJugar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnJugar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnJugar.BackColor = System.Drawing.Color.Transparent;
             this.btnJugar.FlatAppearance.BorderSize = 0;
             this.btnJugar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnJugar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnJugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnJugar.Location = new System.Drawing.Point(460, 401);
+            this.btnJugar.Location = new System.Drawing.Point(455, 393);
             this.btnJugar.Name = "btnJugar";
-            this.btnJugar.Size = new System.Drawing.Size(214, 92);
+            this.btnJugar.Size = new System.Drawing.Size(214, 57);
             this.btnJugar.TabIndex = 0;
             this.btnJugar.Text = "Jugar";
             this.btnJugar.UseVisualStyleBackColor = false;
@@ -70,25 +68,23 @@ namespace AkinatOrt
             this.btnCreditos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnCreditos.Location = new System.Drawing.Point(197, 240);
             this.btnCreditos.Name = "btnCreditos";
-            this.btnCreditos.Size = new System.Drawing.Size(104, 89);
+            this.btnCreditos.Size = new System.Drawing.Size(104, 41);
             this.btnCreditos.TabIndex = 1;
             this.btnCreditos.UseVisualStyleBackColor = false;
             this.btnCreditos.Click += new System.EventHandler(this.btnCreditos_Click);
             // 
             // btntemasf
             // 
-            this.btntemasf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btntemasf.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btntemasf.BackColor = System.Drawing.Color.Transparent;
             this.btntemasf.FlatAppearance.BorderSize = 0;
             this.btntemasf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btntemasf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btntemasf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntemasf.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btntemasf.Location = new System.Drawing.Point(100, 593);
+            this.btntemasf.Location = new System.Drawing.Point(111, 575);
             this.btntemasf.Name = "btntemasf";
-            this.btntemasf.Size = new System.Drawing.Size(214, 92);
+            this.btntemasf.Size = new System.Drawing.Size(214, 51);
             this.btntemasf.TabIndex = 4;
             this.btntemasf.Text = "Temas";
             this.btntemasf.UseVisualStyleBackColor = false;
@@ -107,7 +103,7 @@ namespace AkinatOrt
             this.btnTutorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnTutorial.Location = new System.Drawing.Point(-2, 277);
             this.btnTutorial.Name = "btnTutorial";
-            this.btnTutorial.Size = new System.Drawing.Size(104, 103);
+            this.btnTutorial.Size = new System.Drawing.Size(104, 55);
             this.btnTutorial.TabIndex = 5;
             this.btnTutorial.UseVisualStyleBackColor = false;
             this.btnTutorial.Click += new System.EventHandler(this.btnTutorial_Click);
@@ -131,7 +127,7 @@ namespace AkinatOrt
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AkinatOrt.Properties.Resources.Main_Menu_AkinatOrt__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(721, 749);
+            this.ClientSize = new System.Drawing.Size(721, 701);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnTutorial);
             this.Controls.Add(this.btntemasf);
