@@ -122,6 +122,7 @@ namespace AkinatOrt
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnSi);
             this.Name = "juego";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego";
             this.Load += new System.EventHandler(this.juego_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbDaro)).EndInit();

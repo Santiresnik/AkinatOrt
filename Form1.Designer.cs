@@ -135,6 +135,7 @@ namespace AkinatOrt
             this.Controls.Add(this.btnJugar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AkinatOrt";
             this.Load += new System.EventHandler(this.principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
