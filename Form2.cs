@@ -84,7 +84,7 @@ namespace AkinatOrt
             profesores.Add("Pau", new bool[22] { true, true, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false });
             profesores.Add("Caro", new bool[22] { true, true, false, true, false, false, false, false, true, false, false, false, true, true, true, true, true, false, false, true, true, false });
             profesores.Add("Lu", new bool[22] { true, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, false });
-            profesores.Add("Chona", new bool[22] { false, true, false, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false, false });
+            profesores.Add("Chona", new bool[22] { false, true, false, true, true, false, false, false, false, false, false, true, true, false, true, false, false, false, false, true, false, false });
             profesores.Add("Mati", new bool[22] { false, false, false, true, true, true, false, false, false, false, false, false, true, false, true, false, false, false, false, false, false, false });
             profesores.Add("Joaco", new bool[22] { false, true, true, true, true, false, false, true, false, true, true, false, false, false, true, false, false, false, false, false, false, true });
             profesores.Add("Ranzo", new bool[22] { false, true, true, true, true, true, false, false, false, true, true, true, false, false, false, false, true, false, true, true, false, false });
@@ -107,7 +107,11 @@ namespace AkinatOrt
             {
                 label1.Text = getProfesor();
             }
-            if (num == 7)
+            if(num == 3)
+            {
+                btnNo.Show();
+            }
+            if (num == 6)
             {
                 label1.Text = "Dario";
                 btnNo.Hide();
@@ -127,6 +131,10 @@ namespace AkinatOrt
             if (num == 21)
             {
                 label1.Text = getProfesor();
+            }
+            else if (num == 3)
+            {
+                btnNo.Hide();
             }
             else
             {
